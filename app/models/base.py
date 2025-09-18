@@ -15,7 +15,8 @@ from datetime import datetime
 from typing import Any
 
 from sqlalchemy import DateTime, func
-from sqlalchemy.ext.declarative import as_declarative, declared_attr
+from sqlalchemy.ext.declarative import declared_attr
+from sqlalchemy.orm import as_declarative
 from sqlalchemy.orm import Mapped, mapped_column
 
 
