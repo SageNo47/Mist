@@ -12,6 +12,9 @@ class Settings(BaseSettings):
     log_level: str = "INFO"
     log_file: str = "logs/app.log"
 
+    # database
+    database_path: str = "DATABASE_PATH"
+
     # user management
     # JWT
     jwt_secret_key: str = "JWT_SECRET_KEY"
