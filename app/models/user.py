@@ -15,7 +15,7 @@ from .base import Base
 
 def generate_ulid() -> str:
     """生成ULID作为主键"""
-    return str(ulid.new())
+    return str(ulid.ulid())
 
 
 class User(Base):
