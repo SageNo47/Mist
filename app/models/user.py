@@ -41,11 +41,11 @@ class User(Base):
     )
     
     # 显示名称：用于界面展示
-    display_name: Mapped[str] = mapped_column(
-        String(100),
-        nullable=False,
-        comment="user name for displaying"
-    )
+    # display_name: Mapped[str] = mapped_column(
+    #     String(100),
+    #     nullable=False,
+    #     comment="user name for displaying"
+    # )
     
     # 密码哈希：存储加密后的密码
     password_hash: Mapped[str] = mapped_column(
