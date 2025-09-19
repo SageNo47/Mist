@@ -6,16 +6,12 @@
 定义用户表的结构和字段
 """
 
-import ulid
+# import ulid
 from sqlalchemy import Boolean, Index, String, text
 from sqlalchemy.orm import Mapped, mapped_column
 
-from .base import Base
-
-
-def generate_ulid() -> str:
-    """生成ULID作为主键"""
-    return str(ulid.ulid())
+from app.models.base import Base
+from app.models.utils import generate_ulid
 
 
 class User(Base):
